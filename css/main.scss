@@ -1,0 +1,81 @@
+$fonteLetra: sans-serif;
+$tamanhoLetra: 18px;
+$borda:1px solid black;
+$radiuBorda: 5px;
+
+@keyframes fundo {
+    to{background-color: #ff8d6d;}
+    from{background-color: #a6c3ff;}
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation-name: fundo;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    background-color: pink;
+
+}
+
+.container {
+    width: 1200px;
+    height: 664px;
+    border: $borda;
+    border-radius: $radiuBorda;
+    margin: auto;
+
+    h1 {
+        text-align: center;
+        display: block;
+        font-size: $tamanhoLetra;
+        font-family: $fonteLetra;
+
+    }
+
+    .imagens {
+        width: 1200px;
+        height: 620px;
+        display: flex;
+
+        .natureza {
+            width: 300px;
+            height: 620px;
+        }
+
+        .anime {
+            width: 300px;
+            height: 620px;
+        }
+
+        .horizon {
+            width: 300px;
+            height: 620px;
+        }
+
+        .programacao {
+            width: 300px;
+            height: 620px;
+        }
+
+    }
+}
+
+.natureza:hover {
+
+    opacity: 0.8;
+
+}
+
+.anime:hover {
+    opacity: 0.8;
+}
+
+.horizon:hover {
+    opacity: 0.8;
+}
+
+.programacao:hover {
+    opacity: 0.8;
+}
